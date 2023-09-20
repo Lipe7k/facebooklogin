@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="registro.css">
+</head>
+<body>
+    <div class="app">
+        <div class="left-app">
+            <img src="https://static.xx.fbcdn.net/rsrc.php/yu/r/dyZbZB6M64R.svg" alt="Facebook">
+            <h2>O Facebook ajuda você a se conectar e  compartilhar  com as pessoas que fazem parte da sua vida.</h2>
+            <img src="animation.svg" alt="Animation">
+        </div>
+        <div class="right-app">
+            <div class="card-app">
+                <H1>Cadastrar-se</H1>
+                <input type="text" placeholder="Nick">
+                <input type="text" placeholder="Nome Completo">
+                <input type="text"  name="email" placeholder="Email ou Telefone">
+                <input type="password" placeholder="Criar senha">
+                <button class="btn-registro" >
+                    Registrar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+  // Seleciona o botão pela classe
+  var botoes = document.querySelectorAll(".btn-registro");
+
+  // Adiciona um ouvinte de evento de clique a cada botão
+  botoes.forEach(function(botao) {
+    botao.addEventListener("click", function() {
+      // Exibe o alerta quando o botão é clicado
+      alert("Registrado com sucesso!");
+    });
+  });
+});
+    </script>
+
+</body>
+</html>
